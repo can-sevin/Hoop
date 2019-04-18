@@ -7,6 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
 import androidx.fragment.app.Fragment
+import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import io.androidedu.hoop.R
 import io.androidedu.hoop.adapter.ChatListAdapter
@@ -22,15 +23,12 @@ class ChatsFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-
         with(recycChatList) {
-
             adapter = ChatListAdapter(GenerateDummyData.getDummyChatList()) { chatModel ->
-
                 Toast.makeText(activity, "${chatModel.userName}", Toast.LENGTH_SHORT).show()
             }
 
-            layoutManager = LinearLayoutManager(activity)
+            layoutManager = GridLayoutManager(activity,4)
         }
     }
 

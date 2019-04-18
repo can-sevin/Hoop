@@ -15,7 +15,6 @@ class CameraFragment : Fragment() {
         return inflater.inflate(R.layout.fragment_camera, container, false)
     }
 
-
     companion object {
         @JvmStatic
         fun newInstance() = CameraFragment()

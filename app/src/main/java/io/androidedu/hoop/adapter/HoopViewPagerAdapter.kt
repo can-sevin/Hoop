@@ -14,7 +14,6 @@ class HoopViewPagerAdapter(val fragmentList : ArrayList<Fragment>,
     override fun getItem(position: Int): Fragment {
             return fragmentList[position]
     }
-
     override fun getCount(): Int = fragmentList.size //ister returnlu fonksiyon ister böyle!Kotlin spec.
 
     override fun getPageTitle(position: Int): CharSequence? {

@@ -3,12 +3,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#F434f3"
     tools:context=".ui.CallsFragment">
 
-    <ToggleButton
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+    <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycCallList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
 
 </FrameLayout>

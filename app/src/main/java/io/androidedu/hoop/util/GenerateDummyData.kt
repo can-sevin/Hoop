@@ -1,7 +1,9 @@
 package io.androidedu.hoop.util
 
 import io.androidedu.hoop.R
+import io.androidedu.hoop.model.CallModel
 import io.androidedu.hoop.model.ChatModel
+import io.androidedu.hoop.model.StatusModel
 
 
 // Code with ❤️
@@ -16,46 +18,13 @@ import io.androidedu.hoop.model.ChatModel
 object GenerateDummyData {
 
     fun getDummyChatList(): ArrayList<ChatModel> = ArrayList<ChatModel>().apply {
-
         val chatModel = ChatModel(
-                R.drawable.ic_camera_black,
-                "Gökhan",
-                "Merhaba ben geldim",
-                "Yesterday")
-
-        add(chatModel)
-        add(chatModel)
-        add(chatModel)
-        add(chatModel)
-        add(chatModel)
-        add(chatModel)
-        add(chatModel)
-        add(chatModel)
-        add(chatModel)
-        add(chatModel)
-        add(chatModel)
-        add(chatModel)
-        add(chatModel)
-        add(chatModel)
-        add(chatModel)
-        add(chatModel)
-        add(chatModel)
-        add(chatModel)
-        add(chatModel)
-        add(chatModel)
-        add(chatModel)
-        add(chatModel)
-        add(chatModel)
-        add(chatModel)
-        add(chatModel)
-        add(chatModel)
-        add(chatModel)
-        add(chatModel)
-        add(chatModel)
-        add(chatModel)
-        add(chatModel)
-        add(chatModel)
-        add(chatModel)
-        add(chatModel)
+                R.drawable.ic_launcher_background,
+                "Can",
+                "Hi bitch",
+                "17.10.19")
+        for(x in 0..10){
+            add(chatModel)
+        }
     }
 }

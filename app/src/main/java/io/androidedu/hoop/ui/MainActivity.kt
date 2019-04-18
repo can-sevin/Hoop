@@ -1,17 +1,11 @@
 package io.androidedu.hoop.ui
 
 import android.os.Bundle
-import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
-import androidx.fragment.app.FragmentManager
-import androidx.fragment.app.FragmentTransaction
-import androidx.viewpager.widget.ViewPager
-import com.google.android.material.tabs.TabLayout
 import io.androidedu.hoop.R
 import io.androidedu.hoop.adapter.HoopViewPagerAdapter
 import kotlinx.android.synthetic.main.activity_main.*
-import kotlinx.android.synthetic.main.layout_tab.*
 
 class MainActivity : AppCompatActivity() {
     private val fragmentList = ArrayList<Fragment>()
